@@ -1,44 +1,17 @@
-const prompt = require("prompt-sync")();
 
 let Taxis = [
-  { id: 1, position: 5, available: true, timeRemaining: 0, totalRides: 0 },
-  { id: 2, position: 50, available: true, timeRemaining: 0, totalRides: 0 },
-  { id: 3, position: 90, available: true, timeRemaining: 0, totalRides: 0 }
-]
+    { id: 1, position: 5, available: true, timeRemaining: 0, totalRides: 0 },
+    { id: 2, position: 10, available: true, timeRemaining: 0, totalRides: 0 }
+];
 
 let Requests = [
-  { reqId: 1, position: 10, duration: 6, time: 0 },
-  { reqId: 2, position: 55, duration: 5, time: 1 },
-  { reqId: 3, position: 15, duration: 8, time: 2 },
-  { reqId: 4, position: 92, duration: 3, time: 3 },
-  { reqId: 5, position: 45, duration: 4, time: 3 },
-  { reqId: 6, position: 60, duration: 9, time: 4 },
-  { reqId: 7, position: 25, duration: 3, time: 5 },
-  { reqId: 8, position: 95, duration: 2, time: 5 },
-  { reqId: 9, position: 12, duration: 7, time: 6 },
-  { reqId: 10, position: 40, duration: 3, time: 7 },
-  { reqId: 11, position: 88, duration: 5, time: 8 },
-  { reqId: 12, position: 5, duration: 4, time: 9 },
-  { reqId: 13, position: 20, duration: 6, time: 10 },
-  { reqId: 14, position: 30, duration: 5, time: 10 },
-  { reqId: 15, position: 78, duration: 7, time: 11 },
-  { reqId: 16, position: 2, duration: 3, time: 12 },
-  { reqId: 17, position: 53, duration: 8, time: 13 },
-  { reqId: 18, position: 85, duration: 6, time: 14 },
-  { reqId: 19, position: 10, duration: 4, time: 15 },
-  { reqId: 20, position: 65, duration: 5, time: 16 },
-  { reqId: 21, position: 70, duration: 6, time: 17 },
-  { reqId: 22, position: 95, duration: 4, time: 18 },
-  { reqId: 23, position: 14, duration: 5, time: 19 },
-  { reqId: 24, position: 33, duration: 7, time: 20 },
-  { reqId: 25, position: 45, duration: 9, time: 21 },
-  { reqId: 26, position: 8, duration: 3, time: 22 },
-  { reqId: 27, position: 99, duration: 8, time: 23 },
-  { reqId: 28, position: 37, duration: 4, time: 24 },
-  { reqId: 29, position: 55, duration: 6, time: 25 },
-  { reqId: 30, position: 75, duration: 3, time: 26 }
-]
-
+    { reqId: 1, position: 6, duration: 8, time: 0 },
+    { reqId: 2, position: 8, duration: 5, time: 1 },
+    { reqId: 3, position: 9, duration: 3, time: 2 },
+    { reqId: 4, position: 7, duration: 6, time: 3 },
+    { reqId: 5, position: 4, duration: 2, time: 4 },
+    { reqId: 6, position: 3, duration: 1, time: 5 }
+];
 
 
 let waitingList=[]
@@ -135,3 +108,4 @@ for (let t = 0; t < Taxis.length; t++) {
     console.log("Taxi", Taxis[t].id, "-> courses:", Taxis[t].totalRides, 
                 "position finale:", Taxis[t].position);
 }
+

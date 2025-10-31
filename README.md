@@ -1,6 +1,3 @@
-Here’s a clear, GitHub-ready **README.md** you can use for your *Smart Taxi Dispatcher* project:
-
----
 
 # 🚖 Smart Taxi Dispatcher
 
@@ -84,6 +81,4 @@ Next steps could include:
 Developed by **Anas Berkaoui**,
 as a practice project to improve logic and simulation skills in JavaScript.
 
----
 
-Would you like me to make this README sound **more technical (for developers)** or **more like a learning diary** (explaining your thought process and progress)?

@@ -89,8 +89,7 @@ for (let minute = 0; minute <= totalTime; minute++) {
         for (let w = 0; w < waitingList.length; w++) {
             let [index, shortDistance] = findNearestTaxi(w);
             if (index != -1) {
-                console.log("Request (waiting):", waitingList[w].reqId, "-> Taxi", Taxis[index].id, 
-                            "assigné (distance", shortDistance + ")");
+                console.log("Request (waiting):", waitingList[w].reqId, "-> Taxi", Taxis[index].id, "assigné (distance", shortDistance + ")");
                 let reqIndex = Requests.findIndex(r => r.reqId == waitingList[w].reqId);
                 assignerTaxi(index, reqIndex);
             } else {
@@ -108,4 +107,5 @@ for (let t = 0; t < Taxis.length; t++) {
     console.log("Taxi", Taxis[t].id, "-> courses:", Taxis[t].totalRides, 
                 "position finale:", Taxis[t].position);
 }
+
 
